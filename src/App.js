@@ -1,5 +1,6 @@
 // import logo from './logo.svg';
-// import './App.css';
+//import './App.css';
+
 import React, {useEffect, useState} from 'react';
 import { Route} from "react-router-dom";
 import { Routes } from 'react-router-dom';
@@ -10,6 +11,7 @@ import {auth} from './firebase'
 import Navigation from './Common/Navigation/Navigation'
 import Home2 from './Pages/Home2/Home2';
 import Footer from './Common/Footer/Footer';
+import Forlinkingtry from './Pages/Forlinkingtry';
 function App() {
   const [userName, setUserName] = useState("");
   useEffect(() => {
@@ -24,10 +26,11 @@ function App() {
   }, []);
   return (
 
-    <div className="full_app_structure">
-    <div className="headAndNav">
+    <div className="full_app_structure" >
+           
+    {/* <div className="headAndNav">
           <Navigation/>
-     </div>
+     </div> */}
 
     <div className="routing">
       <Routes>
@@ -35,9 +38,10 @@ function App() {
         <Route exact path="/login" element={<Login/>}></Route>
         <Route exact path="/signup" element={<Signup/>}></Route>
         <Route exact path="/home2" element={<Home2/>}></Route>
+        <Route exact path="/forlinkingtry" element={<Forlinkingtry/>}></Route>
       </Routes>
     </div>
-    <Footer/>
+    {/* <Footer/> */}
     </div>
   );
 }
