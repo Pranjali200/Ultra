@@ -1,7 +1,19 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './header.css';
 // import './logo.png';
+import {Menu,  MenuItem, Button} from '@material-ui/core';
+ 
+import  { useState } from 'react'
 const Header = () => {
+    const [anchor, setAnchor]=useState(null);
+
+    const openMenu=(event) =>{
+      setAnchor(event.currentTarget);
+   }
+   const closeMenu=()=>{
+     setAnchor(null);
+   }
     return (
     <div className='header' id='head_content'>
         <img src="favicon.ico" alt="Ultracure-logoImage" className='header-logo-img' id="hl1"></img>
@@ -13,8 +25,31 @@ const Header = () => {
         <div className='icons'>
             <img src="https://cdn-icons-png.flaticon.com/128/4301/4301554.png" id='upload_icon' ></img>
             <img src="https://cdn-icons-png.flaticon.com/128/1170/1170678.png" id='cart_icon' ></img>
-            <img src="https://cdn-icons-png.flaticon.com/128/3024/3024605.png" id='profile_icon' ></img>
+            {/* <img src="https://cdn-icons-png.flaticon.com/128/3024/3024605.png" id='profile_icon' ></img> */}
+            <Button onClick={openMenu}><img src="https://cdn-icons-png.flaticon.com/128/3024/3024605.png" id='profile_icon' style={{width:'fit-content'}}></img> </Button>  
+      <Menu open={Boolean(anchor)} 
+      keepMounted anchorEl={anchor} 
+      onClose={closeMenu} 
+      PaperProps={{
+        style: {
+            maxHeight: 40* 4,
+            width: '14ch',
+            marginTop:'48px',
+            // backgroundColor:'grey'
+          }
+        
+      }}>
+         <MenuItem >First</MenuItem>
+         <MenuItem>Second</MenuItem>
+         <MenuItem>Third</MenuItem>
+         <MenuItem>
+         <Link to="/signup" style={{textDecoration:'none', color:'black'}}>SignOut</Link></MenuItem>
+      </Menu>
+            
        </div>
+       
+
+  
     </div>
        );
   };

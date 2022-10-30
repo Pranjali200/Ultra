@@ -39,9 +39,7 @@ const Sliders = () => {
         }}> 
         next
       </button>
-           <h1>
-            hii
-           </h1>
+          
     </div>
     );
   };

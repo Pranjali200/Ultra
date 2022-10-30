@@ -41,24 +41,9 @@
  #profile_icon{
     height: 40px;
  }
-@media screen and (max-width: 1014px) {
+ @media screen and (max-width: 1035px) {
    #search-box1{
-      width: 380px;
-   }
- }
- @media screen and (max-width: 900px) {
-   #search-box1{
-      width: 300px;
-   }
- }
- @media screen and (max-width: 890px) {
-   #search-box1{
-      width: 280px;
-   }
- }
- @media screen and (max-width: 800px) {
-   #search-box1{
-      width: 230px;
+      width: 340px;
    }
    #upload_icon{
       height: 30px;
@@ -73,6 +58,40 @@
       height: 40px;
    }
  }
+@media screen and (max-width: 1014px) {
+   #search-box1{
+      width: 380px;
+   }
+ }
+
+ @media screen and (max-width: 900px) {
+   #search-box1{
+      width: 300px;
+   }
+ }
+ @media screen and (max-width: 890px) {
+   #search-box1{
+      width: 280px;
+   }
+ }
+ @media screen and (max-width: 800px) {
+   #search-box1{
+      width: 200px;
+   }
+   #upload_icon{
+      height: 30px;
+   }
+   #cart_icon{
+      height: 30px;  
+   }
+   #profile_icon{
+      height: 30px;
+   }
+   #search-box1{
+      height: 40px;
+   }
+ }
+
  @media screen and (max-width: 700px) {
     .header-logo{
       height: 50px;
@@ -90,7 +109,19 @@
       width: fit-content;
    }
    #hl1{
-      padding-left: 1px;
+      padding-left: 0;
+   }
+   #upload_icon{
+      height: 25px;
+      margin-right: 15px!important;
+   }
+   #cart_icon{
+      height: 25px;  
+      margin-right: 2px!important;
+   }
+   #profile_icon{
+      height: 25px;
+
    }
 }
  @media screen and (max-width: 1015px) {
