@@ -5,6 +5,8 @@ import Footer from '../../Common/Footer/Footer';
 import Header from '../../Header/Header';
 import Sliders from '../../Components/Slider/Sliders'
 import Card from '../../Components/Cards/Card';
+import ProductSlider from '../../Components/ProductSlider/ProductSlider';
+import Ss from '../../Components/SlickSlider/Ss';
 
 const Home = (props) => {
 return (
@@ -58,10 +60,17 @@ return (
                imageUrl='https://image.made-in-china.com/202f0j00vMzhItAlkObF/Free-Sample-Ready-Stock-Guangzhou-Blood-Pressure-Monitor-with-Pulse-Oximeter-Bp-Monitor.jpg'
               //  body='sea side'
               />
-           </div> 
-       
-         
-      
+           </div><br/> 
+           <div className='home_page_contents' style={{maxWidth:'1460px', margin:'0px auto'}}>
+             <h4>Trending offers</h4>
+          </div>
+         <ProductSlider/>
+         <br/>
+         <div className='home_page_contents' style={{maxWidth:'1460px', margin:'0px auto'}}>
+             <h4>Brands Available</h4>
+         </div>
+         <Ss />
+         <br/><br/>
       <Footer/> 
       </div>
       );
