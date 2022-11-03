@@ -1,9 +1,9 @@
 .card-container{
-    margin-left: 30px;
+   margin-left: 30px;
    width: 270px;
    /* overflow: hidden; */
    box-shadow: 0px 0px 15px -2px;
-   transition: 0.3s;
+   transition: 0.5s;
    /* animation: ease-in; */
    margin-bottom: 10px;
    background-color:whitesmoke;

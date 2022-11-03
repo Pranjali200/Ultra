@@ -12,6 +12,8 @@ import Navigation from './Common/Navigation/Navigation'
 import Home2 from './Pages/Home2/Home2';
 import Footer from './Common/Footer/Footer';
 import Forlinkingtry from './Pages/Forlinkingtry';
+import Ayur from './Pages/Ayurveda/Ayur';
+import Allo from './Pages/Allopathic/Allo'
 function App() {
   const [userName, setUserName] = useState("");
   useEffect(() => {
@@ -39,6 +41,8 @@ function App() {
         <Route exact path="/signup" element={<Signup/>}></Route>
         <Route exact path="/home2" element={<Home2/>}></Route>
         <Route exact path="/forlinkingtry" element={<Forlinkingtry/>}></Route>
+        <Route exact path="/ayur" element={<Ayur/>}></Route>
+        <Route exact path="/allo" element={<Allo/>}></Route>
       </Routes>
     </div>
     {/* <Footer/> */}

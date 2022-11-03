@@ -31,21 +31,27 @@ return (
           </div>
           <br/><h6 style={{maxWidth:'1460px', margin:'0px auto'}}>MEDICINE TYPE</h6><br/>
         <div className='card-structure d-flex justify-content-left' >
+        <Link to={'/ayur'} style={{textDecoration:'none',color:'black'}}>
              <Card 
                title='Ayurveda'
                imageUrl='https://www.biospectrumindia.com/uploads/articles/ayurvedic_0404_1_-13185.jpg'
               //  body='sea side'
               />
+          </Link>
+          <Link to={'/allo'} style={{textDecoration:'none',color:'black'}}>
                <Card 
                title='Allopathic'
                imageUrl='https://3.imimg.com/data3/WA/CN/MY-10558939/allopathy-250x250.jpg'
               //  body='sea side'
               />
+          </Link> 
+          <Link to={'/allo'} style={{textDecoration:'none',color:'black'}}>
                <Card 
                title='Homeopathic'
                imageUrl='https://post.healthline.com/wp-content/uploads/2020/08/Chamomile_and_Homeopathic_Medicine-732x549-thumbnail.jpg'
               //  body='sea side'
               />
+           </Link>   
                  <br/>
           </div> 
           <br/><h6 style={{maxWidth:'1460px', margin:'0px auto'}}>OTHER VARIETY</h6><br/>

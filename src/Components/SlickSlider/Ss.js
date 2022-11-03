@@ -65,6 +65,11 @@ const dataSlider=[
         title: 'd',
         linkImg:'https://cdn.cookielaw.org/logos/9eb64978-23c0-4924-97a4-03eb6aab1106/42b7e788-72a8-402b-abb4-8e095a696386/472e7c95-4717-4044-ac85-5a696ef95d4a/Cetaphil_Logo.jpg'
     },
+    {
+      id: 9,
+      title: 'e',
+      linkImg:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrO4_iIimQf_IW0uSRhoxHRDf3lEAp9vNmTA&usqp=CAU'
+  },
 ]
 // const Ss = () => {
     function Ss(){
