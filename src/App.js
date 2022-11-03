@@ -13,7 +13,8 @@ import Home2 from './Pages/Home2/Home2';
 import Footer from './Common/Footer/Footer';
 import Forlinkingtry from './Pages/Forlinkingtry';
 import Ayur from './Pages/Ayurveda/Ayur';
-import Allo from './Pages/Allopathic/Allo'
+import Allo from './Pages/Allopathic/Allo';
+import Homeopath from './Pages/Homeopathic/Homeopath';
 function App() {
   const [userName, setUserName] = useState("");
   useEffect(() => {
@@ -43,6 +44,7 @@ function App() {
         <Route exact path="/forlinkingtry" element={<Forlinkingtry/>}></Route>
         <Route exact path="/ayur" element={<Ayur/>}></Route>
         <Route exact path="/allo" element={<Allo/>}></Route>
+        <Route exact path="/homeopath" element={<Homeopath/>}></Route>
       </Routes>
     </div>
     {/* <Footer/> */}

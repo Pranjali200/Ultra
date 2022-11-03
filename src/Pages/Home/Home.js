@@ -45,7 +45,7 @@ return (
               //  body='sea side'
               />
           </Link> 
-          <Link to={'/allo'} style={{textDecoration:'none',color:'black'}}>
+          <Link to={'/homeopath'} style={{textDecoration:'none',color:'black'}}>
                <Card 
                title='Homeopathic'
                imageUrl='https://post.healthline.com/wp-content/uploads/2020/08/Chamomile_and_Homeopathic_Medicine-732x549-thumbnail.jpg'

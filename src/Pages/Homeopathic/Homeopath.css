@@ -64,3 +64,65 @@
  height: fit-content;
  width: 1200px;  
 }  
+   /* #bakery_bw_space{
+    padding-top: 2rem;
+    gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(7rem,18rem)); 
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+#bakery_full_card{
+ overflow: hidden;
+ border-radius: 4px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ cursor: pointer;
+ transition: transform 200ms ease-in;
+ padding-top: 0.5rem;
+ padding-left: 1.5rem;
+ padding-right: 0.5rem;
+ padding-bottom: 0.5rem; 
+ background-color: whitesmoke;
+}
+#bakery_image{
+ height: 15rem;
+ width: 14rem;
+ object-fit:cover;
+ border-radius: 4px;
+}
+#bakeryCard_title_txt{
+ padding: 0.001rem;
+ font-size: 1rem;
+}
+#bakeryCard_btn1{
+   font-weight: bold;
+   font-size: 0.8rem;
+   background-color: white;
+   color: black;
+   border-radius: 5px;
+   transition: color 200ms ease-in;
+   border-color:black;
+   border: 2px solid;
+}
+#bakery_full_card:hover{
+ transform: scale(1.02);
+}
+#bakeryCard_btn1:hover{
+ transform: scale(1.05);
+ background-color: #9EB23B;
+ border-color: #9EB23B; 
+ color: #f1f1f1;
+}
+.items_shopByCategory{
+ background-color: white; 
+ }
+.itemsHere2{
+ height: fit-content;
+ width:fit-content;
+}
+.itemImage2{
+ height: fit-content;
+ width: 1200px;  
+}   */

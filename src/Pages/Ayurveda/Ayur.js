@@ -6,6 +6,7 @@ import Slider from 'react-slick';
 import ImgSlide from './ImgSlide';
 import { useState } from 'react';
 import './Ayur.css'
+// import Allo from '../Allopathic/Allo.css';
 
 import Header from '../../Header/Header';
 import Footer from '../../Common/Footer/Footer';
