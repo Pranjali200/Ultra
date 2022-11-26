@@ -15,6 +15,10 @@ import Forlinkingtry from './Pages/Forlinkingtry';
 import Ayur from './Pages/Ayurveda/Ayur';
 import Allo from './Pages/Allopathic/Allo';
 import Homeopath from './Pages/Homeopathic/Homeopath';
+import Cart from './Pages/Cart/Cart';
+import Userprofile from './Pages/Userprofile/Userprofile';
+import AddProducts from './Components/AddProducts/AddProducts';
+import Allprodpage from './Components/AboutProduct/Allprodpage';
 function App() {
   const [userName, setUserName] = useState("");
   useEffect(() => {
@@ -45,9 +49,15 @@ function App() {
         <Route exact path="/ayur" element={<Ayur/>}></Route>
         <Route exact path="/allo" element={<Allo/>}></Route>
         <Route exact path="/homeopath" element={<Homeopath/>}></Route>
+        <Route exact path="/cart" element={<Cart/>}></Route>
+        <Route exact path='/userprofile' element={<Userprofile/>}></Route>
+        <Route exact path='/addprod' element={<AddProducts/>}></Route>
+        <Route exact path='/product-type/allopathic' element={<Allprodpage type={'Allopathic Medicine'}/>}></Route>
+        <Route exact path='/product-type/homeopathic' element={<Allprodpage type={'Homeopathic Medicine'}/>}></Route>
+        <Route exact path='/product-type/ayurvedic' element={<Allprodpage type={'Ayurvedic Medicine'}/>}></Route>
       </Routes>
     </div>
-    {/* <Footer/> */}
+    {/* <Footer/> */} 
     </div>
   );
 }

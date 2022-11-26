@@ -8,7 +8,7 @@ import { useState } from 'react';
 import './Ayur.css'
 // import Allo from '../Allopathic/Allo.css';
 
-import Header from '../../Header/Header';
+import Header from '../../Common/Header/Header';
 import Footer from '../../Common/Footer/Footer';
 import Navigation from '../../Common/Navigation/Navigation';
 

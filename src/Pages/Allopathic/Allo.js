@@ -8,7 +8,7 @@ import ImgSlide from '../Ayurveda/ImgSlide';
 import { useState } from 'react';
 import './Allo.css'
 
-import Header from '../../Header/Header';
+import Header from '../../Common/Header/Header';
 import Footer from '../../Common/Footer/Footer';
 import Navigation from '../../Common/Navigation/Navigation';
 
@@ -22,14 +22,6 @@ const itemname=[
       cover:"https://webocity.in/wp-content/uploads/2018/09/pharmaceutical-banner-min.jpg",
     },
     
-    // {
-    //   id:3,
-    //   cover:"https://www.kamaayurveda.com/_next/image?url=https%3A%2F%2Fwww.kamaayurveda.com%2Fimages%2Fbanner%2FKama_Oct-2022_Body-Oils_Webloader_2800x800px.jpg&w=1920&q=75",
-    // },
-    // {
-    //   id:4,
-    //   cover:"https://www.patanjaliayurved.net/assets/img/Ayurvedic_Medicine.jpg"
-    // },
   ]
   const settings = {
     dots: true,

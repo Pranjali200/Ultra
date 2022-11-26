@@ -1,14 +1,43 @@
-import React from 'react'
+import React, {useState, useEffect, useInsertionEffect} from 'react'
 import { Link } from 'react-router-dom';
 import Navigation from '../../Common/Navigation/Navigation';
 import Footer from '../../Common/Footer/Footer';
-import Header from '../../Header/Header';
+import Header from '../../Common/Header/Header';
 import Sliders from '../../Components/Slider/Sliders'
 import Card from '../../Components/Cards/Card';
 import ProductSlider from '../../Components/ProductSlider/ProductSlider';
 import Ss from '../../Components/SlickSlider/Ss';
-
+import {auth, db} from "../../firebase";
+import { collection, getDocs, query, where } from 'firebase/firestore';
 const Home = (props) => {
+
+  function GetCurrentUser(){
+        const [user,setUser]= useState('')
+        const userCollectionRef = collection(db, "users")
+
+        useEffect(()=>{
+             auth.onAuthStateChanged(userlogged=>{
+                 if(userlogged){
+                     const getUsers = async ()=>{
+                       const q = query(collection(db, "users"), where("uid", "==",userlogged.uid))
+                      //console.log(q)
+                    const data = await getDocs(q);
+                    setUser(data.docs.map((doc)=>({...doc.data(),id:doc.id})))  
+                     }
+                     getUsers();
+                 }
+                 else{
+                  setUser(null)
+                 }
+             })
+        },[])
+        return user
+  }
+
+  const loggeduser = GetCurrentUser();
+  // console.log(loggeduser)
+  //if(loggeduser){console.log(loggeduser[0].email)}
+
 return (
       <div>
         <div className="headAndNav">
@@ -24,7 +53,12 @@ return (
           <Link to="signup">Signup</Link>
         </h1> */}
         </div>
-        <h2 style={{marginLeft:'45%'}}>{props.name ? `Welcome - ${props.name}` : "Login please"}</h2>
+       
+
+      <p>{loggeduser ? loggeduser[0].email : "No data"}</p>
+    
+
+        {/* <h2 style={{marginLeft:'45%'}}>{props.username ? `Welcome - ${props.username}` : "Login please"}</h2> */}
       <Sliders/>
           <div className='home_page_contents' style={{maxWidth:'1460px', margin:'0px auto'}}>
              <h4>Shop by category</h4>
