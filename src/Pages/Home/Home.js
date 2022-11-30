@@ -9,6 +9,8 @@ import ProductSlider from '../../Components/ProductSlider/ProductSlider';
 import Ss from '../../Components/SlickSlider/Ss';
 import {auth, db} from "../../firebase";
 import { collection, getDocs, query, where } from 'firebase/firestore';
+import NewSlider from '../../Components/NewSliderFire/NewSlider';
+import './Home.css'
 const Home = (props) => {
 
   function GetCurrentUser(){
@@ -111,6 +113,10 @@ return (
          </div>
          <Ss />
          <br/><br/>
+         <div className='slider-head1' style={{maxWidth:'1460px', margin:'0px auto'}}><p>Buy what you need!</p></div>
+         <NewSlider type={'Allopathic Medicine'}/>
+         <NewSlider type={'Homeopathic Medicine'}/>
+         <NewSlider type={'Ayurvedic Medicine'}/>
       <Footer/> 
       </div>
       );

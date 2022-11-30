@@ -19,6 +19,8 @@ import Cart from './Pages/Cart/Cart';
 import Userprofile from './Pages/Userprofile/Userprofile';
 import AddProducts from './Components/AddProducts/AddProducts';
 import Allprodpage from './Components/AboutProduct/Allprodpage';
+import Specificprodpage from './Components/AboutProduct/Specificprodpage';
+import ProdCard from './Components/NewSliderFire/ProdCard';
 function App() {
   const [userName, setUserName] = useState("");
   useEffect(() => {
@@ -38,7 +40,6 @@ function App() {
     {/* <div className="headAndNav">
           <Navigation/>
      </div> */}
-
     <div className="routing">
       <Routes>
         <Route exact path="/" element={<Home name={userName}/>}></Route>
@@ -55,6 +56,12 @@ function App() {
         <Route exact path='/product-type/allopathic' element={<Allprodpage type={'Allopathic Medicine'}/>}></Route>
         <Route exact path='/product-type/homeopathic' element={<Allprodpage type={'Homeopathic Medicine'}/>}></Route>
         <Route exact path='/product-type/ayurvedic' element={<Allprodpage type={'Ayurvedic Medicine'}/>}></Route>
+        {/* <Route path="/product/:id/:title/:brand/:customersupport/:description/:price/:productimage/:producttype/:warranty" element={<Specificprodpage/>}></Route> */}
+        <Route path="/product/:type/:id/" element={<Specificprodpage/>}></Route>
+        {/* {`/product/${p.id}/${product.product.producttitle} /${product.product.brand}
+    /${product.product.customersupport}/${product.product.description}/${product.product.price}
+    /${product.product.productimage}/${product.product.producttype}/${product.product.warranty}`} */}
+
       </Routes>
     </div>
     {/* <Footer/> */} 

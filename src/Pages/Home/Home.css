@@ -1,0 +1,10 @@
+.slider-head1{
+     display: flex;
+     justify-content: center;
+     margin-top: 20px;
+}
+.slider-head1 p{
+    font-size: 55px;
+    font-weight: 700;
+    color: #32aeb1;
+}
