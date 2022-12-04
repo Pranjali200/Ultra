@@ -1,6 +1,8 @@
 import { Button } from '@material-ui/core';
 import React from 'react'
 import { Link } from 'react-router-dom';
+import Search from '../../Pages/SearchBar/Search';
+import SearchResults from '../../Pages/SearchBar/SearchResults.json';
 const Navigation = () => {
 
     return (
@@ -20,7 +22,7 @@ const Navigation = () => {
           <Link to="/forlinkingtry" className="nav-link active" aria-current="page" style={{marginLeft:'10px'}}>Home2</Link>
         </li>
         <li className="nav-item">
-          <Link to="/forlinkingtry" className="nav-link" style={{marginLeft:'10px'}}>About</Link>
+          <Link to="/contactus" className="nav-link" style={{marginLeft:'10px'}}>ContactUS</Link>
         </li>
         <li className="nav-item">
           <Link to="/forlinkingtry" className="nav-link" style={{marginLeft:'10px'}}>Particular Section</Link>
@@ -48,8 +50,10 @@ const Navigation = () => {
         
       </ul>
       <form className="d-flex" role="search">
-        <input className="form-control me-2" type="search" placeholder="Search by disease" aria-label="Search" style={{paddingLeft: "50px !important"}}/>
-        <button className="btn btn-outline-success" type="submit">Search</button>
+        
+        {/* <input className="form-control me-2" type="search" placeholder="Search by disease" aria-label="Search" style={{paddingLeft: "50px !important"}}/> */}
+        <Search placeholder="Search medicines" data={SearchResults}/>
+        {/* <button className="btn btn-outline-success" type="submit">Search</button> */}
       </form>
     </div>
   </div>

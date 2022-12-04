@@ -5,6 +5,10 @@ const img1="https://www.netmeds.com/images/cms/aw_rbslider/slides/1666343732_Hom
 const img2="https://www.netmeds.com/images/cms/aw_rbslider/slides/1666355540_Home_Bannercold.jpg";
 const img3="https://www.netmeds.com/images/cms/aw_rbslider/slides/1666072069_Fitness-Week_wellness_web.jpg";
 const img4="https://www.netmeds.com/images/cms/aw_rbslider/slides/1666362146_Home_Bannernms20.jpg";
+// const img1="https://www.netmeds.com/images/cms/aw_rbslider/slides/1665579858_Cancer-medicines-order-now.jpg";
+// const img2="https://www.netmeds.com/images/cms/aw_rbslider/slides/1665579858_Cancer-medicines-order-now.jpg";
+// const img3="https://www.netmeds.com/images/cms/aw_rbslider/slides/1665579858_Cancer-medicines-order-now.jpg";
+// const img4="https://www.netmeds.com/images/cms/aw_rbslider/slides/1665579858_Cancer-medicines-order-now.jpg";
 const img5="https://www.netmeds.com/images/cms/aw_rbslider/slides/1665579858_Cancer-medicines-order-now.jpg";
 
 

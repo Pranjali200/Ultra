@@ -21,6 +21,7 @@ import AddProducts from './Components/AddProducts/AddProducts';
 import Allprodpage from './Components/AboutProduct/Allprodpage';
 import Specificprodpage from './Components/AboutProduct/Specificprodpage';
 import ProdCard from './Components/NewSliderFire/ProdCard';
+import Contact from './Pages/ContactUs/Contact';
 function App() {
   const [userName, setUserName] = useState("");
   useEffect(() => {
@@ -61,7 +62,7 @@ function App() {
         {/* {`/product/${p.id}/${product.product.producttitle} /${product.product.brand}
     /${product.product.customersupport}/${product.product.description}/${product.product.price}
     /${product.product.productimage}/${product.product.producttype}/${product.product.warranty}`} */}
-
+         <Route exact path='/contactus' element={<Contact/>}></Route>
       </Routes>
     </div>
     {/* <Footer/> */} 

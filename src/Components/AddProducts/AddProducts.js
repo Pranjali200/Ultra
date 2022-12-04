@@ -13,6 +13,7 @@ const AddProducts = () => {
 
    const [producttitle, setProductTitle] = useState('');
    const [producttype, setProductType] = useState('');
+   const [keyspecs, setKeyspecs] = useState('');
    const [description, setDescription] = useState('');
    const [brand, setBrand] = useState('');
    const [customersupport, setCustomersupport] = useState('');
@@ -85,7 +86,8 @@ const loggeduser = GetCurrentUser();
                         customersupport,
                         price,
                         warranty,
-                        productimage: url  
+                        productimage: url,
+                        keyspecs: keyspecs  
                      })
                       
                   })
@@ -130,6 +132,10 @@ const loggeduser = GetCurrentUser();
                             {imageError && <>
                                 <div className='error-msg1'>{imageError}</div>
                             </>}  
+
+                            <label>Key Specifications</label>
+                         <textarea onChange={(e)=>setKeyspecs(e.target.value)} 
+                             placeholder='Enter some key specifications'/>  
 
                             <label>Description</label>
                             <textarea onChange={(e) => setDescription(e.target.value)}

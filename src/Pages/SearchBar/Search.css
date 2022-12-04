@@ -1,0 +1,35 @@
+.dataResult1 {
+    margin-top: 1px;
+    width: 200px;
+    height: 60px;
+    background-color:whitesmoke;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+    overflow: hidden;
+    overflow-y: auto;
+    margin-left: 0px;
+  }
+  
+  .dataResult1::-webkit-scrollbar {
+    display: none; 
+  }
+  
+  .dataResult1 .dataItem1 {
+    margin-top: 2px;
+    width: 100%;
+    height: 22px;
+    display: flex;
+    align-items: center;
+    color: black;
+  }
+  
+  .dataItem1:link {
+     margin-left: 10px; 
+     text-decoration: none;
+  }
+  .dataItem1:hover{
+   color: lightslategray;
+  }
+  
+  .dataItem p{
+    margin-left: 10px;
+  } 
